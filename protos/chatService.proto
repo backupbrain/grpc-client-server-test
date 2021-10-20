@@ -1,0 +1,47 @@
+syntax = "proto3";
+package chatService;
+
+// Define a service
+
+// Define data types here
+/*
+message Message {
+    string user = 1;
+    string message = 2;
+}
+/* */
+
+message AccountCredentials {
+    string username = 1;
+    string password = 2;
+}
+
+message OauthCredentials {
+    string token = 3;
+    uint32 timeoutSeconds = 4;
+}
+
+// Define the service containing methods here
+service ChatServiceRoutes {
+
+    // Basic function call, makes request and returns value
+    rpc Login(AccountCredentials) returns (OauthCredentials) {}
+    rpc Logout(OauthCredentials) returns (OauthCredentials) {}
+
+    // Basic function call, makes request and returns value
+    // rpc GetLastMessage(OauthCredentials) returns (Message) {}
+
+    // Basic function call, makes request and returns value
+    // rpc SendMessage(OauthCredentials, Message) returns (Message) {}
+
+    // server-side streaming RPC, client sends requests and gets
+    // stream of messages back. Client reads until no more messages
+    // rpc GetMessages(OauthCredentials) returns (stream Message) {}
+
+    // client side streaming RPC writes a sequence of messages
+    // to server, then gets a single response back
+    // rpc SendMessages(OauthCredentials, stream Message) returns (Message) {}
+
+    // bidirectional streaming RPC, both sides send streams
+    // rpc SendReceiveMessages(OauthCredentials, stream Message) returns (stream Message) {}
+}
