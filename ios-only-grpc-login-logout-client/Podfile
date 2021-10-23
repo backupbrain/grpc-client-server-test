@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+# project `~/XCode-Projects/ios-only-grpc-login-logout-client`
+# project `./ios-only-grpc-login-logout-client.xcodeproj`
+# project `/Users/adonis/XCode-Projects/ios-only-grpc-login-logout-client/ios-only-grpc-login-logout-client.xcodeproj`
+
+# warn_for_unused_master_specs_repo => false
+
+target 'ios-only-grpc-login-logout-client' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+    # pod 'SwiftGRPC'
+    pod 'gRPC-Swift', '~> 1.5.0'
+    pod 'gRPC-Swift-Plugins'
+
+end

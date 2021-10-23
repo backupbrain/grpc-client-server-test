@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0F424A2722B1C700577B25 /* ios_only_grpc_login_logout_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F42492722B1C700577B25 /* ios_only_grpc_login_logout_clientApp.swift */; };
+		7A0F424C2722B1C700577B25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F424B2722B1C700577B25 /* ContentView.swift */; };
+		7A0F424E2722B1CA00577B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F424D2722B1CA00577B25 /* Assets.xcassets */; };
+		7A0F42512722B1CA00577B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F42502722B1CA00577B25 /* Preview Assets.xcassets */; };
+		7A0F42532722B1CA00577B25 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F42522722B1CA00577B25 /* Persistence.swift */; };
+		7A0F42562722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F42542722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodeld */; };
+		7A0F42612722B1CA00577B25 /* ios_only_grpc_login_logout_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F42602722B1CA00577B25 /* ios_only_grpc_login_logout_clientTests.swift */; };
+		7A0F426C2722B1CA00577B25 /* ios_only_grpc_login_logout_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F426B2722B1CA00577B25 /* ios_only_grpc_login_logout_clientUITests.swift */; };
+		7AE319F0272334E500E9EF5E /* chatService.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE319EE272334E500E9EF5E /* chatService.pb.swift */; };
+		7AE319F1272334E500E9EF5E /* chatService.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE319EF272334E500E9EF5E /* chatService.grpc.swift */; };
+		7AE319F327234BB100E9EF5E /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE319F227234BB100E9EF5E /* ChatClient.swift */; };
+		AB6E602F0CE7775070CC082C /* Pods_ios_only_grpc_login_logout_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F3271329BA0A0D309ACFC4 /* Pods_ios_only_grpc_login_logout_client.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A0F425D2722B1CA00577B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0F423E2722B1C700577B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0F42452722B1C700577B25;
+			remoteInfo = "ios-only-grpc-login-logout-client";
+		};
+		7A0F42682722B1CA00577B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0F423E2722B1C700577B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0F42452722B1C700577B25;
+			remoteInfo = "ios-only-grpc-login-logout-client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44F3271329BA0A0D309ACFC4 /* Pods_ios_only_grpc_login_logout_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_only_grpc_login_logout_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60743F5235D271E46205F30D /* Pods-ios-only-grpc-login-logout-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-only-grpc-login-logout-client.release.xcconfig"; path = "Target Support Files/Pods-ios-only-grpc-login-logout-client/Pods-ios-only-grpc-login-logout-client.release.xcconfig"; sourceTree = "<group>"; };
+		7A0F42462722B1C700577B25 /* ios-only-grpc-login-logout-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-only-grpc-login-logout-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0F42492722B1C700577B25 /* ios_only_grpc_login_logout_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_only_grpc_login_logout_clientApp.swift; sourceTree = "<group>"; };
+		7A0F424B2722B1C700577B25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A0F424D2722B1CA00577B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A0F42502722B1CA00577B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A0F42522722B1CA00577B25 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7A0F42552722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_only_grpc_login_logout_client.xcdatamodel; sourceTree = "<group>"; };
+		7A0F42572722B1CA00577B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0F425C2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-only-grpc-login-logout-clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0F42602722B1CA00577B25 /* ios_only_grpc_login_logout_clientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_only_grpc_login_logout_clientTests.swift; sourceTree = "<group>"; };
+		7A0F42622722B1CA00577B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0F42672722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-only-grpc-login-logout-clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0F426B2722B1CA00577B25 /* ios_only_grpc_login_logout_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_only_grpc_login_logout_clientUITests.swift; sourceTree = "<group>"; };
+		7A0F426D2722B1CA00577B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE319EE272334E500E9EF5E /* chatService.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatService.pb.swift; sourceTree = SOURCE_ROOT; };
+		7AE319EF272334E500E9EF5E /* chatService.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatService.grpc.swift; sourceTree = SOURCE_ROOT; };
+		7AE319F227234BB100E9EF5E /* ChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
+		9C7BDED7F98D052FB3024D84 /* Pods-ios-only-grpc-login-logout-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-only-grpc-login-logout-client.debug.xcconfig"; path = "Target Support Files/Pods-ios-only-grpc-login-logout-client/Pods-ios-only-grpc-login-logout-client.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A0F42432722B1C700577B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6E602F0CE7775070CC082C /* Pods_ios_only_grpc_login_logout_client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F42592722B1CA00577B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F42642722B1CA00577B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C25D029DE7091C7BD3B489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C7BDED7F98D052FB3024D84 /* Pods-ios-only-grpc-login-logout-client.debug.xcconfig */,
+				60743F5235D271E46205F30D /* Pods-ios-only-grpc-login-logout-client.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A0F423D2722B1C700577B25 = {
+			isa = PBXGroup;
+			children = (
+				7A0F42482722B1C700577B25 /* ios-only-grpc-login-logout-client */,
+				7A0F425F2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests */,
+				7A0F426A2722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests */,
+				7A0F42472722B1C700577B25 /* Products */,
+				31C25D029DE7091C7BD3B489 /* Pods */,
+				CAB0A42E86001951A43134EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A0F42472722B1C700577B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F42462722B1C700577B25 /* ios-only-grpc-login-logout-client.app */,
+				7A0F425C2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests.xctest */,
+				7A0F42672722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A0F42482722B1C700577B25 /* ios-only-grpc-login-logout-client */ = {
+			isa = PBXGroup;
+			children = (
+				7AE319EF272334E500E9EF5E /* chatService.grpc.swift */,
+				7AE319EE272334E500E9EF5E /* chatService.pb.swift */,
+				7A0F42492722B1C700577B25 /* ios_only_grpc_login_logout_clientApp.swift */,
+				7A0F424B2722B1C700577B25 /* ContentView.swift */,
+				7A0F424D2722B1CA00577B25 /* Assets.xcassets */,
+				7A0F42522722B1CA00577B25 /* Persistence.swift */,
+				7A0F42572722B1CA00577B25 /* Info.plist */,
+				7A0F42542722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodeld */,
+				7A0F424F2722B1CA00577B25 /* Preview Content */,
+				7AE319F227234BB100E9EF5E /* ChatClient.swift */,
+			);
+			path = "ios-only-grpc-login-logout-client";
+			sourceTree = "<group>";
+		};
+		7A0F424F2722B1CA00577B25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F42502722B1CA00577B25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A0F425F2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F42602722B1CA00577B25 /* ios_only_grpc_login_logout_clientTests.swift */,
+				7A0F42622722B1CA00577B25 /* Info.plist */,
+			);
+			path = "ios-only-grpc-login-logout-clientTests";
+			sourceTree = "<group>";
+		};
+		7A0F426A2722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F426B2722B1CA00577B25 /* ios_only_grpc_login_logout_clientUITests.swift */,
+				7A0F426D2722B1CA00577B25 /* Info.plist */,
+			);
+			path = "ios-only-grpc-login-logout-clientUITests";
+			sourceTree = "<group>";
+		};
+		CAB0A42E86001951A43134EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F3271329BA0A0D309ACFC4 /* Pods_ios_only_grpc_login_logout_client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A0F42452722B1C700577B25 /* ios-only-grpc-login-logout-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0F42702722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-client" */;
+			buildPhases = (
+				B21668405C5455CF127C531B /* [CP] Check Pods Manifest.lock */,
+				7A0F42422722B1C700577B25 /* Sources */,
+				7A0F42432722B1C700577B25 /* Frameworks */,
+				7A0F42442722B1C700577B25 /* Resources */,
+				41C3B064B869C81245EB5E7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-only-grpc-login-logout-client";
+			productName = "ios-only-grpc-login-logout-client";
+			productReference = 7A0F42462722B1C700577B25 /* ios-only-grpc-login-logout-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A0F425B2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0F42732722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-clientTests" */;
+			buildPhases = (
+				7A0F42582722B1CA00577B25 /* Sources */,
+				7A0F42592722B1CA00577B25 /* Frameworks */,
+				7A0F425A2722B1CA00577B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0F425E2722B1CA00577B25 /* PBXTargetDependency */,
+			);
+			name = "ios-only-grpc-login-logout-clientTests";
+			productName = "ios-only-grpc-login-logout-clientTests";
+			productReference = 7A0F425C2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A0F42662722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0F42762722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-clientUITests" */;
+			buildPhases = (
+				7A0F42632722B1CA00577B25 /* Sources */,
+				7A0F42642722B1CA00577B25 /* Frameworks */,
+				7A0F42652722B1CA00577B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0F42692722B1CA00577B25 /* PBXTargetDependency */,
+			);
+			name = "ios-only-grpc-login-logout-clientUITests";
+			productName = "ios-only-grpc-login-logout-clientUITests";
+			productReference = 7A0F42672722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A0F423E2722B1C700577B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7A0F42452722B1C700577B25 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					7A0F425B2722B1CA00577B25 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 7A0F42452722B1C700577B25;
+					};
+					7A0F42662722B1CA00577B25 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 7A0F42452722B1C700577B25;
+					};
+				};
+			};
+			buildConfigurationList = 7A0F42412722B1C700577B25 /* Build configuration list for PBXProject "ios-only-grpc-login-logout-client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A0F423D2722B1C700577B25;
+			productRefGroup = 7A0F42472722B1C700577B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A0F42452722B1C700577B25 /* ios-only-grpc-login-logout-client */,
+				7A0F425B2722B1CA00577B25 /* ios-only-grpc-login-logout-clientTests */,
+				7A0F42662722B1CA00577B25 /* ios-only-grpc-login-logout-clientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A0F42442722B1C700577B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0F42512722B1CA00577B25 /* Preview Assets.xcassets in Resources */,
+				7A0F424E2722B1CA00577B25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F425A2722B1CA00577B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F42652722B1CA00577B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C3B064B869C81245EB5E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-only-grpc-login-logout-client/Pods-ios-only-grpc-login-logout-client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-only-grpc-login-logout-client/Pods-ios-only-grpc-login-logout-client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-only-grpc-login-logout-client/Pods-ios-only-grpc-login-logout-client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21668405C5455CF127C531B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-only-grpc-login-logout-client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A0F42422722B1C700577B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE319F1272334E500E9EF5E /* chatService.grpc.swift in Sources */,
+				7A0F42562722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodeld in Sources */,
+				7A0F42532722B1CA00577B25 /* Persistence.swift in Sources */,
+				7A0F424C2722B1C700577B25 /* ContentView.swift in Sources */,
+				7AE319F0272334E500E9EF5E /* chatService.pb.swift in Sources */,
+				7A0F424A2722B1C700577B25 /* ios_only_grpc_login_logout_clientApp.swift in Sources */,
+				7AE319F327234BB100E9EF5E /* ChatClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F42582722B1CA00577B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0F42612722B1CA00577B25 /* ios_only_grpc_login_logout_clientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A0F42632722B1CA00577B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0F426C2722B1CA00577B25 /* ios_only_grpc_login_logout_clientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A0F425E2722B1CA00577B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A0F42452722B1C700577B25 /* ios-only-grpc-login-logout-client */;
+			targetProxy = 7A0F425D2722B1CA00577B25 /* PBXContainerItemProxy */;
+		};
+		7A0F42692722B1CA00577B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A0F42452722B1C700577B25 /* ios-only-grpc-login-logout-client */;
+			targetProxy = 7A0F42682722B1CA00577B25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A0F426E2722B1CA00577B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A0F426F2722B1CA00577B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A0F42712722B1CA00577B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C7BDED7F98D052FB3024D84 /* Pods-ios-only-grpc-login-logout-client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-only-grpc-login-logout-client/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A0F42722722B1CA00577B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60743F5235D271E46205F30D /* Pods-ios-only-grpc-login-logout-client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-only-grpc-login-logout-client/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7A0F42742722B1CA00577B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-clientTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-only-grpc-login-logout-client.app/ios-only-grpc-login-logout-client";
+			};
+			name = Debug;
+		};
+		7A0F42752722B1CA00577B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-clientTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-only-grpc-login-logout-client.app/ios-only-grpc-login-logout-client";
+			};
+			name = Release;
+		};
+		7A0F42772722B1CA00577B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-clientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-only-grpc-login-logout-client";
+			};
+			name = Debug;
+		};
+		7A0F42782722B1CA00577B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WSWJ7JKTP;
+				INFOPLIST_FILE = "ios-only-grpc-login-logout-clientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Test.ios-only-grpc-login-logout-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-only-grpc-login-logout-client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A0F42412722B1C700577B25 /* Build configuration list for PBXProject "ios-only-grpc-login-logout-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0F426E2722B1CA00577B25 /* Debug */,
+				7A0F426F2722B1CA00577B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0F42702722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0F42712722B1CA00577B25 /* Debug */,
+				7A0F42722722B1CA00577B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0F42732722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-clientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0F42742722B1CA00577B25 /* Debug */,
+				7A0F42752722B1CA00577B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0F42762722B1CA00577B25 /* Build configuration list for PBXNativeTarget "ios-only-grpc-login-logout-clientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0F42772722B1CA00577B25 /* Debug */,
+				7A0F42782722B1CA00577B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A0F42542722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A0F42552722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodel */,
+			);
+			currentVersion = 7A0F42552722B1CA00577B25 /* ios_only_grpc_login_logout_client.xcdatamodel */;
+			path = ios_only_grpc_login_logout_client.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A0F423E2722B1C700577B25 /* Project object */;
+}
