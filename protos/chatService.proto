@@ -1,5 +1,6 @@
 syntax = "proto3";
 package chatService;
+option objc_class_prefix = "RTG"; // important for iOS / Xcode
 
 // Define a service
 
@@ -9,7 +10,7 @@ message Message {
     string user = 1;
     string message = 2;
 }
-/* */
+*/
 
 message AccountCredentials {
     string username = 1;

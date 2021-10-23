@@ -41,13 +41,13 @@ class ChatServer {
     }
     login (username, password) {
         let loginData = {}
-        if (!(username in this.activeUsers)) {
-            loginData = new ChatLogin(username, password)
-            this.authTokens[loginData.authToken] = login
-            this.activeUsers[username] = loginData.authToken
-        } else {
+        if (username in this.activeUsers) {
             loginData = this.activeUsers[username]
             this.authTokens[loginData.authToken].refreshExpiration()
+        } else {
+            loginData = new ChatLogin(username, password)
+            this.authTokens[loginData.authToken] = loginData
+            this.activeUsers[username] = loginData.authToken
         }
         const currentTime = new Date()
         const output = {
@@ -58,7 +58,7 @@ class ChatServer {
     }
     logout (authToken) {
         if (authToken in this.authTokens) {
-            const loginData = this.authToken
+            const loginData = this.authTokens[authToken]
             delete this.activeUsers[loginData.username]
             delete this.authTokens[authToken]
         }
@@ -114,7 +114,7 @@ function getGrpcServer () {
     return grpcServer
 }
 const grpcServer = getGrpcServer()
-console.log('Starting gRPC server on port 50051...')
+console.log('Starting gRPC server on port 0.0.0.0:50051...')
 grpcServer.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), () => {
     grpcServer.start()
 })
