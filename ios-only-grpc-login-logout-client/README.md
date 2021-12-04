@@ -29,14 +29,14 @@ Build the project
 gRPC is a way for clients and servers to communicate with each other over the Internet. It is intended as an upgrade from REST APIs, with some great features:
 * It transmits faster by using a binary format instead of JSON.
 * It uses a language-agnostic data format, which can be defined and passed. around to clients without the need for per-language developer documentation.
-* It translates it's common data format into the native data formats of the server and client.
-* It supports versioning, so future versions of server code don't requrie a total rewrite of the client.
+* It translates its common data format into the native data formats of the server and client.
+* It supports versioning, so future versions of server code don't require a total rewrite of the client.
 * It defines how to find the endpoints, so URL naming is no longer an issue.
 * It works over HTTP/3, which enables bidirectional streaming with less network latency.
 
 The down sides (at the time of writing) are:
 * It requires custom compiler code for each language to perform all the conversions and binary format conversions.
-* The mechanics of operation are totaly obscure to developers. It either works or it doesn't.
+* The mechanics of operation are totally obscure to developers. It either works or it doesn't.
 * The toolchains are new and not very well supported. Sometimes getting a simple call and response to work can take hours or days to get working.
 * In particular, it is poorly supported
 * HTTP/3 is poorly supported by browsers and app software, especially over at Apple.
@@ -45,12 +45,12 @@ In this tutorial, I will attempt to walk you through the process I went through 
 
 ## Prerequisites
 
-In order to build this project, we will need some developement tools:
+In order to build this project, we will need some development tools:
 
 * [An Apple computer](https://www.apple.com/mac/)
-* [Xcode and Command-Line-Tools](https://developer.apple.com/xcode/), (require an Apple computer) Apple's IDE and compiler tools for building iOS projects
-* [GoLang](https://golang.org/), a programming lanugage made by Google
-* [Homebrew](https://brew.sh/) (require Xcode), the MacOS package manager
+* [Xcode and Command-Line-Tools](https://developer.apple.com/xcode/), (requires an Apple computer) Apple's IDE and compiler tools for building iOS projects
+* [GoLang](https://golang.org/), a programming language made by Google
+* [Homebrew](https://brew.sh/) (requires Xcode), the MacOS package manager
 * [NodeJS](https://nodejs.org/) (Requires Homebrew), Javascript interpreter for command-line programming
 * [Cocoapods](https://cocoapods.org/), a package manager for Xcode project libraries and frameworks.
 
